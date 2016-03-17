@@ -1,0 +1,60 @@
+
+
+<div class="main_post">
+	
+	
+	{% for post in site.posts limit:1 %}
+
+		<h5> {{ post.date | date: "%d %B, %Y" }}</h5>
+		<h1>{{ post.title }}</h1>
+		<h4>{{ post.excerpt }}</h4>
+
+		<a href="{{ post.url }}"> Czytaj </a>
+		
+	{% endfor %} 
+
+		
+</div>
+
+<hr class="line">
+
+<div class="next_posts clearfix">
+	
+	{% for post in site.posts limit:4 offset:1 %}
+
+		<a href="{{ post.url }}">
+
+			<h5> {{ post.date | date: "%d %B, %Y" }}</h5>
+			<h3>{{ post.title }}</h3>
+
+		</a>
+
+	{% endfor %}
+
+</div>
+
+<div class="next_posts clearfix">
+	
+	{% for post in site.posts limit:4 offset:5 %}
+
+		<a href="{{ post.url }}">
+
+			<h5> {{ post.date | date: "%d %B, %Y" }}</h5>
+			<h3>{{ post.title }}</h3>
+
+		</a>
+
+	{% endfor %}
+
+</div>
+
+<div class="slide_nav">
+
+	<div class="button_nav">
+
+		<a href="" class="new">Next</a>
+		<a href="" class="older">Older</a>
+		
+	</div>
+
+</div>

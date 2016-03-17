@@ -1,0 +1,19 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import 
+	"_0-tools/normalize",
+	"_0-tools/clearfix",
+	"_1-base/base",
+	"_1-base/default",
+	"_2-modules/main_content",
+	"_2-modules/nav",
+	"_3-layouts/post"
+
+	;
+
+
