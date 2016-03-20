@@ -14,5 +14,4 @@ markdown: kramdown
 
 port: 8000
 
-
-baseurl: http://ciakarellas.github.io/Na-Froncie/
+url: http://ciakarellas.github.io/Na-Froncie/
