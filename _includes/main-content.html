@@ -4,7 +4,7 @@
 	
 	
 	{% for post in site.posts limit:1 %}
-		<a href="{{ page.url | prepend: site.github.url }}">
+		<a href="{{ post.url | prepend: site.github.url }}">
 
 			<h5> {{ post.date | date: "%d %B, %Y" }}</h5>
 			<h1>{{ post.title }}</h1>
@@ -25,8 +25,8 @@
 	
 	{% for post in site.posts limit:4 offset:1 %}
 
-		<a href="{{ page.url | prepend: site.github.url }}">
-		
+		<a href="{{ post.url | prepend: site.github.url }}">
+
 			<h5> {{ post.date | date: "%d %B, %Y" }}</h5>
 			<h3>{{ post.title }}</h3>
 
@@ -40,7 +40,7 @@
 	
 	{% for post in site.posts limit:4 offset:5 %}
 
-		<a href="{{ page.url | prepend: site.github.url }}">
+		<a href="{{ post.url | prepend: site.github.url }}">
 
 			<h5> {{ post.date | date: "%d %B, %Y" }}</h5>
 			<h3>{{ post.title }}</h3>
