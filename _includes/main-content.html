@@ -4,12 +4,12 @@
 	
 	
 	{% for post in site.posts limit:1 %}
-
+		<a href="{{ post.url }}"> 
 		<h5> {{ post.date | date: "%d %B, %Y" }}</h5>
 		<h1>{{ post.title }}</h1>
 		<h4>{{ post.excerpt }}</h4>
 
-		<a href="{{ post.url }}"> Czytaj </a>
+		<h5>Czytaj</h5> </a>
 		
 	{% endfor %} 
 
@@ -33,7 +33,7 @@
 
 </div>
 
-<div class="next_posts clearfix">
+<div class="next_posts second clearfix">
 	
 	{% for post in site.posts limit:4 offset:5 %}
 
