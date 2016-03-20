@@ -15,3 +15,7 @@ markdown: kramdown
 port: 8000
 
 url: http://ciakarellas.github.io/Na-Froncie/
+
+sass:
+  sass_dir: css
+  style: :nested
