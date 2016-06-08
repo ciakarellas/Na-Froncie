@@ -1,7 +1,7 @@
 @import _1-base/base
 
 .main-head
-	height: 80vh
+	height: 90vh
 	background-color: #64B5F6
 	margin: 0 0 5em 0
 	
@@ -13,11 +13,11 @@
 
 		.wraper
 			margin: 0 10%
-			padding-top: 14em
+			padding-top: 12em
 			text-align: center
 			
 			h5, h1
-				color: white
+				color: rgba(255,255,255, 0.8)
 			h1
 				font-size: 3em
 
@@ -32,55 +32,135 @@ section
 		p
 			margin: 0 0 29px 0
 			font-family: 'Open-Sans', sans-serif
-			color: #333
+			color: rgba(0, 0, 0, 0.8)
 			font-size: 1.25em
 			line-height: 1.55em
 			
 	footer
-
-		margin: 0 auto
 		width: 700px
+		margin: 2em auto
+		display: none
+
 
 		.social_media
+			
+			margin: 0 200px
 
 			a 
-				img 
+				margin: 0 20px
 
+				img 
 					width: 40px
 
-	.comment
-		
-		margin: 0 auto
+
+	#disqus_thread
+
 		width: 700px
+		margin: 5em auto
 
-
-
-		
+@media screen and (max-width: 1164px)
+	section
+		.main-head
+			.title
+				.menu
+					.toggle
+						
+						
+						position: fixed
+						top: 40px
+						right: 40px
+						z-index: 9
+			
+						label
+							span 	
+								content: ''
+								display: block
+								width: 30px
+								height: 4px
+								background: white
+								margin: 5px 0
+								border-radius: 25%
+							
+				
+					nav
+						position: fixed
+						top: -200px
+						width: 100%
+						padding: 0px
+						z-index: 1
+						background: rgba(51,51,51, .91)
+						margin: 0 0 20px 0
+						
+			
+						ul 
+							li 	
+								display: block
+								float: none
+								text-align: center
+				#nav
+					display: none
+			
+					&:checked + .menu
+			
+						nav 
+							top: 0px
+							left: 0px
+							height: 100%
+			
+							ul 
+								margin-top: 10%
+			
+								li 	
+									font-size: 2em
+									margin: 2em
 
 
 @media only screen and (max-width: 1024px)
 
 	section 
+		.main-head
+			.title
+			
 		article 
 			width: 80%
+	
+	
+		#disqus_thread
+	
+			width: 80%
+			margin: 3em auto
 
 
 
-@media only screen and (max-width: 453px)
+@media only screen and (max-width: 480px)
 
-	.main-head
-		margin-bottom: 1em
-		height: 80vh
+	section
+		.main-head
+			margin-bottom: 1em
+			height: 550px
+	
+			.title
+				.menu
+				
+					h1
+						left: 130px
+						top: 20px
+						font-size: 1.7em
+			
+					.toggle
+						top: 88%
+						right: 7px
+						background-color: rgba(3,169,139, 1)
+						border-radius: 50%
+						padding: 10px 12px
+						.wraper
+			
+							text-align: left
+			
+							h5
+								font-size: 1em
 
-		.title
-			.wraper
-
-				text-align: left
-
-				h5
-					font-size: 1em
-
-	section 
+	
 		article 
 			width: 85%
 
@@ -91,7 +171,11 @@ section
 			p
 				font-size: 1.1em
 				line-height: 2em
-
+	
+		#disqus_thread
+	
+			width: 85%
+			margin: 3em auto
 
 
 
