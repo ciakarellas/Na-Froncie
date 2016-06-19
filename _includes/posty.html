@@ -3,7 +3,7 @@
 	
 	{% for post in site.posts %}
 
-		<a href="{{ post.url | prepend: site.github.url }}">
+		<a class="ratio" href="{{ post.url | prepend: site.github.url }}">
 
 			<h5> {{ post.date | date: "%d %B, %Y" }}</h5>
 			<h3>{{ post.title }}</h3>
